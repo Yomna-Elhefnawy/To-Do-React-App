@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 50%s;
+}
+
+.item-header,
+.item-content,
+.adding-form,
+form {
+  width: 40vw;
+  background: rgb(33, 176, 244);
+  height: 49px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top-right-radius: 12rem;
+  border-top-left-radius: 12rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.item-header span,
+.item-content span {
+  flex: 1;
+}
+.item-header span:first-child,
+.item-content span:first-child {
+  flex: 2;
+}
+.item-content {
+  background: #fff;
+  color: #48457e;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0;
+  border: 1px solid rgba(51, 51, 51, 0.349);
+}
+
+.adding-form,
+form {
+  border-radius: 0;
+  border-bottom-left-radius: 12rem;
+  border-bottom-right-radius: 12rem;
+  background-color: rgba(255, 255, 255, 0.527);
+}
+.adding-form form {
+  width: 100%;
+  height: 100%;
+}
+.adding-form form input {
+  height: 100%;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(44, 43, 41, 0.493);
+  color: #fff;
+}
+
+.adding-form form input:first-child {
+  flex: 2;
+  border-bottom-left-radius: 12rem;
+  /*text-indent: 1.5rem;*/
+  border-right: 1px solid rgba(85, 85, 85, 0.342);
+}
+.adding-form form input[type="submit"] {
+  border-bottom-right-radius: 12rem;
+  background: rgb(33, 176, 244);
+  cursor: pointer;
+}
+.adding-form form input[type="submit"]:hover {
+  background: rgb(7, 102, 146);
+}
+input::placeholder {
+  color: #fff;
+}
+.x {
+  color: rgb(146, 34, 34);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.x:hover {
+  transform: scale(1.5);
+  color: #f00;
+}
+
+.nothing {
+  background: #fff;
+  text-align: center;
+  color: #f00;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
